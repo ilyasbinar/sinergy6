@@ -113,5 +113,14 @@ public class Main {
             e.getValue().printEmployee();
         }
 
+        //Call Multiple Return Demo
+        Object[] oArr = MultipleReturnDemo.objectArray();
+        for (Object o : oArr) {
+            if(o instanceof Employee){
+                ((Employee) o).printEmployee();
+            }else{
+                System.out.println(o);
+            }
+        }
     }
 }
