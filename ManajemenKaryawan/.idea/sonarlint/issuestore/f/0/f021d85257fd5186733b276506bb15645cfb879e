@@ -1,0 +1,5 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åæ´¶8÷Ê™·­1
+p	java:S116"ORename this field "EXIT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚²ÕŸÿÿÿÿÿ8ºÄ˜·­1
+\
+java:S1128":Remove this unused import 'org.example.view.EmployeeView'.(Ì‚Í¥øÿÿÿÿ8˜ë²´­1

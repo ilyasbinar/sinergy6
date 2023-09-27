@@ -1,0 +1,13 @@
+
+G	java:S106"+Replace this use of System.out by a logger.(âÃéŒ8èá·­1
+L	java:S106"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8íá·­1
+L	java:S106 "+Replace this use of System.out by a logger.(ã’•÷ûÿÿÿÿ8îá·­1
+G	java:S106$"+Replace this use of System.out by a logger.(ˆÁç¸8ğá·­1
+G	java:S106("+Replace this use of System.out by a logger.(ªÿˆÉ8òá·­1
+L	java:S1062"+Replace this use of System.out by a logger.(À¨Ï—ıÿÿÿÿ8úá·­1
+L	java:S1063"+Replace this use of System.out by a logger.(°¿ÏËûÿÿÿÿ8úá·­1
+L	java:S1067"+Replace this use of System.out by a logger.(Ä«‹âıÿÿÿÿ8üá·­1
+L	java:S106@"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8€â·­1
+R
+java:S1128
+"5Remove this unused import 'java.util.logging.Logger'.(ƒ¥óš8â·­1
