@@ -37,11 +37,14 @@ public class EmployeeService {
 
     public Employee getEmployeeByEmpId(String empId) {
 
-        Optional<Employee> employee =  Data.employees.stream().filter(p->p.getEmpId().equals(empId)).findFirst();
-        if(employee.isEmpty()){
+        Employee employee = null;
+        Optional<Employee> employeeOptional =  Data.employees.stream().filter(p->p.getEmpId().equals(empId)).findFirst();
+        if(employeeOptional.isEmpty()){
             ErrorView errorView = new ErrorView();
             errorView.wrongEmpId();
+        }else {
+            employee = employeeOptional.get();
         }
-        return employee.get();
+        return employee;
     }
 }
