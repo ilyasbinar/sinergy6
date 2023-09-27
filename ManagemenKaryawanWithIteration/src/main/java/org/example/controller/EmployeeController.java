@@ -15,7 +15,6 @@ import java.util.Scanner;
 public class EmployeeController {
     public void home(){
         GeneralView.welcomeMessage();
-        menu();
     }
 
     public void menu() {
@@ -41,6 +40,7 @@ public class EmployeeController {
                 } case 0 ->{
                     CSVDataService csvDataService = new CSVDataService();
                     csvDataService.exportData();
+                    AppService.setExit(true);
                 }
                 default -> {
                     ErrorView errorView = new ErrorView();
@@ -55,7 +55,6 @@ public class EmployeeController {
     private void addEmployee() {
         EmployeeService employeeService = new EmployeeService();
         employeeService.tambahEmployee();
-        menu();
     }
 
     public void showEmployee(){
@@ -70,7 +69,6 @@ public class EmployeeController {
     private void employeeDetail(Employee employee) {
         EmployeeView employeeView = new EmployeeView();
         employeeView.showEmployee(employee);
-        menu();
     }
 
     public String inputName() {
