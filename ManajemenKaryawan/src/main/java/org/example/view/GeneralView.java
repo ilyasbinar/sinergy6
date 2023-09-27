@@ -3,6 +3,9 @@ package org.example.view;
 import org.example.utils.Constant;
 
 public class GeneralView {
+
+    private GeneralView() {}
+
     public static void welcomeMessage(){
         System.out.println(Constant.LINE_30C);
         System.out.println("Selamat datang di BinarStaff");

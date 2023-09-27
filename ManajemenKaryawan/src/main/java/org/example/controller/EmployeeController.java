@@ -34,19 +34,15 @@ public class EmployeeController {
             int selectedMenu = scanner.nextInt();
 
             switch (selectedMenu) {
-                case 1 ->{
-                   addEmployee();
-                   ;
-                } case 2 -> {
-                    showEmployee();
-                    ;
-                } case 3, 4 -> {
+                case 1 -> addEmployee();
+                case 2 -> showEmployee();
+                case 3, 4 -> {
                    //TODO tobe implemented
                 } case 0 ->{
                     CSVDataService csvDataService = new CSVDataService();
                     csvDataService.exportData();
-                    AppService.EXIT=true;
-                    ;
+                    AppService appService = new AppService();
+                    appService.setEXIT(true);
                 }
                 default -> {
                     ErrorView errorView = new ErrorView();
@@ -80,16 +76,18 @@ public class EmployeeController {
     }
 
     public String inputName() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+        return inputLine();
     }
 
     public String inputEmpId() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+        return inputLine();
     }
 
     public String inputAddress() {
+        return inputLine();
+    }
+
+    public String inputLine(){
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }

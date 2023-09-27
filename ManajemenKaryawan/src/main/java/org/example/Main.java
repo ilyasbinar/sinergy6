@@ -1,7 +1,7 @@
 package org.example;
 
 import org.example.service.AppService;
-import org.example.service.CSVDataService;
+import org.example.view.GeneralView;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,5 +11,6 @@ public class Main {
         appService.initiateData();
 
         appService.run();
+
     }
 }

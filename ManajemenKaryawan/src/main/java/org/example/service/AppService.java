@@ -4,7 +4,15 @@ import org.example.controller.EmployeeController;
 import org.example.view.EmployeeView;
 
 public class AppService {
-    public static boolean EXIT=false;
+    private boolean EXIT=false;
+
+    public boolean isEXIT() {
+        return EXIT;
+    }
+
+    public void setEXIT(boolean EXIT) {
+        this.EXIT = EXIT;
+    }
 
     public void initiateData() {
         //import latest data employee from CSV
