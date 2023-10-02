@@ -32,10 +32,15 @@ public class EmployeeService {
         int departementSelected = employeeController.inputDepartement();
         Departement departement =  Data.departementMap.get(departementSelected);
         e.setDepartement(departement);
+        createEmployee(e);
+    }
+    public void createEmployee(Employee e){
         Data.employees.add(e);
     }
 
     public Employee getEmployeeByEmpId(String empId) {
+
+        List<Employee> empList = Data.employees;
 
         Employee employee = null;
         Optional<Employee> employeeOptional =  Data.employees.stream().filter(p->p.getEmpId().equals(empId)).findFirst();
