@@ -1,2 +1,6 @@
 
 L	java:S106"+Replace this use of System.out by a logger.(üน๛ýÿÿÿÿ8่๓ฦญญ1
+X
+java:S1854+";Remove this useless assignment to local variable "empList".(ณํÝฟ8ัÞาฏ1
+I
+java:S1481+",Remove this unused "empList" local variable.(ณํÝฟ8ำÞาฏ1

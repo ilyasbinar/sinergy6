@@ -26,7 +26,10 @@ public class EmployeeService {
         employeeView.fieldEmpId();
         e.setEmpId(employeeController.inputEmpId());
         employeeView.fieldAddress();
+
         e.setAddress(employeeController.inputAddress());
+        e.setAddress(null);
+
         employeeView.fieldDepartement();
 
         int departementSelected = employeeController.inputDepartement();

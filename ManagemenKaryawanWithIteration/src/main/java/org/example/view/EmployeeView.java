@@ -56,9 +56,19 @@ public class EmployeeView {
 
     public void showEmployee(Employee employee) {
         StringBuilder sb = new StringBuilder();
+
+//        String address = employee.getAddressOptional().orElse("N/A");
+
+//        String address ="";
+//        if(employee.getAddress()!=null) address = employee.getAddress();
+//        else address = "N/A";
+
+        String address = employee.getAddress()!=null?employee.getAddress():"N/A";
+
+
         sb.append("Nama\t\t:"+employee.getName()).append(Constant.NEW_LINE)
                 .append("NIP\t\t\t:"+employee.getEmpId()).append(Constant.NEW_LINE)
-                .append("Alamat\t\t:"+employee.getAddress()).append(Constant.NEW_LINE)
+                .append("Alamat\t\t:"+address).append(Constant.NEW_LINE)
                 .append("Departemen\t:"+employee.getDepartement().getName());
         System.out.println(sb);
     }

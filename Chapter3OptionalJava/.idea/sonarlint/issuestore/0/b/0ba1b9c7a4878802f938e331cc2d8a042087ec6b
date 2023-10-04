@@ -1,0 +1,32 @@
+
+y
+java:S1488>"\Immediately return this expression instead of assigning it to the temporary variable "addr".(‹ñ8îŞÃ×¯1
+e
+java:S1854/"CRemove this useless assignment to local variable "employeeService".(©¥£æûÿÿÿÿ8øŞÃ×¯1
+]
+java:S1854(";Remove this useless assignment to local variable "address".(œ£ÁËÿÿÿÿÿ8øŞÃ×¯1
+^
+java:S18547"<Remove this useless assignment to local variable "address3".(“ ¤£øÿÿÿÿ8øŞÃ×¯1
+^
+java:S18549"<Remove this useless assignment to local variable "address3".(¼¸ùÃüÿÿÿÿ8ùŞÃ×¯1
+L	java:S106	"+Replace this use of System.out by a logger.(€€Ù²ÿÿÿÿÿ8ûŞÃ×¯1
+J	java:S108")Either remove or fill this block of code.(»Ûğ›ûÿÿÿÿ8şŞÃ×¯1
+E	java:S108")Either remove or fill this block of code.(‘ÙÖŞ8şŞÃ×¯1
+X	java:S125!"<This block of commented-out lines of code should be removed.(Ş­Æ¦8ÿŞÃ×¯1
+X	java:S125#"<This block of commented-out lines of code should be removed.(½¯çê8ÿŞÃ×¯1
+p
+java:S1602)"SRemove useless curly braces around statement and then remove useless return keyword(×Ôññ8ÿŞÃ×¯1
+N
+java:S1481(",Remove this unused "address" local variable.(œ£ÁËÿÿÿÿÿ8€ßÃ×¯1
+V
+java:S1481/"4Remove this unused "employeeService" local variable.(©¥£æûÿÿÿÿ8ßÃ×¯1
+]	java:S1251"<This block of commented-out lines of code should be removed.( ¡ßúÿÿÿÿ8ßÃ×¯1
+G	java:S1064"+Replace this use of System.out by a logger.(ëçéÈ8ßÃ×¯1
+G	java:S106B"+Replace this use of System.out by a logger.(ù×ã‚8ƒßÃ×¯1
+Z
+java:S1612E"=Replace this lambda with method reference 'Integer::valueOf'.(¾½·Ó8…ßÃ×¯1
+G	java:S106H"+Replace this use of System.out by a logger.(â«èÆ8†ßÃ×¯1
+G	java:S106N"+Replace this use of System.out by a logger.(”Éø8‡ßÃ×¯1
+]	java:S125R"<This block of commented-out lines of code should be removed.(Ìë¨ªüÿÿÿÿ8ˆßÃ×¯1
+V
+java:S3400X"9Remove this method and declare a constant for this value.(ÖÏ‘¨8ˆßÃ×¯1
