@@ -47,6 +47,7 @@ public class EmployeeService {
 
         Employee employee = null;
         Optional<Employee> employeeOptional =  Data.employees.stream().filter(p->p.getEmpId().equals(empId)).findFirst();
+        Optional<Employee> employeeOptional =  Data.employees.stream().
         if(employeeOptional.isEmpty()){
             ErrorView errorView = new ErrorView();
             errorView.wrongEmpId();

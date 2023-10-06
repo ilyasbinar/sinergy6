@@ -1,14 +1,16 @@
 
 y
-java:S1488>"\Immediately return this expression instead of assigning it to the temporary variable "addr".(‹ñ8îŞÃ×¯1
+java:S1488@"\Immediately return this expression instead of assigning it to the temporary variable "addr".(‹ñ8âÏ™Ø¯1
+Y
+java:S18543"<Remove this useless assignment to local variable "address2".(Í¹Š8„¯˜Ø¯1
 e
 java:S1854/"CRemove this useless assignment to local variable "employeeService".(©¥£æûÿÿÿÿ8øŞÃ×¯1
 ]
 java:S1854(";Remove this useless assignment to local variable "address".(œ£ÁËÿÿÿÿÿ8øŞÃ×¯1
 ^
-java:S18547"<Remove this useless assignment to local variable "address3".(“ ¤£øÿÿÿÿ8øŞÃ×¯1
+java:S18549"<Remove this useless assignment to local variable "address3".(“ ¤£øÿÿÿÿ8ëÏ™Ø¯1
 ^
-java:S18549"<Remove this useless assignment to local variable "address3".(¼¸ùÃüÿÿÿÿ8ùŞÃ×¯1
+java:S1854;"<Remove this useless assignment to local variable "address3".(¼¸ùÃüÿÿÿÿ8ëÏ™Ø¯1
 L	java:S106	"+Replace this use of System.out by a logger.(€€Ù²ÿÿÿÿÿ8ûŞÃ×¯1
 J	java:S108")Either remove or fill this block of code.(»Ûğ›ûÿÿÿÿ8şŞÃ×¯1
 E	java:S108")Either remove or fill this block of code.(‘ÙÖŞ8şŞÃ×¯1
@@ -21,12 +23,14 @@ java:S1481(",Remove this unused "address" local variable.(œ£ÁËÿÿÿÿÿ8€ßÃ×¯1
 V
 java:S1481/"4Remove this unused "employeeService" local variable.(©¥£æûÿÿÿÿ8ßÃ×¯1
 ]	java:S1251"<This block of commented-out lines of code should be removed.( ¡ßúÿÿÿÿ8ßÃ×¯1
-G	java:S1064"+Replace this use of System.out by a logger.(ëçéÈ8ßÃ×¯1
-G	java:S106B"+Replace this use of System.out by a logger.(ù×ã‚8ƒßÃ×¯1
+J
+java:S14813"-Remove this unused "address2" local variable.(Í¹Š8“±™Ø¯1
+G	java:S1066"+Replace this use of System.out by a logger.(ëçéÈ8ôÏ™Ø¯1
+G	java:S106D"+Replace this use of System.out by a logger.(ù×ã‚8÷Ï™Ø¯1
 Z
-java:S1612E"=Replace this lambda with method reference 'Integer::valueOf'.(¾½·Ó8…ßÃ×¯1
-G	java:S106H"+Replace this use of System.out by a logger.(â«èÆ8†ßÃ×¯1
-G	java:S106N"+Replace this use of System.out by a logger.(”Éø8‡ßÃ×¯1
-]	java:S125R"<This block of commented-out lines of code should be removed.(Ìë¨ªüÿÿÿÿ8ˆßÃ×¯1
+java:S1612G"=Replace this lambda with method reference 'Integer::valueOf'.(¾½·Ó8úÏ™Ø¯1
+G	java:S106J"+Replace this use of System.out by a logger.(â«èÆ8úÏ™Ø¯1
+G	java:S106P"+Replace this use of System.out by a logger.(”Éø8üÏ™Ø¯1
+]	java:S125T"<This block of commented-out lines of code should be removed.(Ìë¨ªüÿÿÿÿ8üÏ™Ø¯1
 V
-java:S3400X"9Remove this method and declare a constant for this value.(ÖÏ‘¨8ˆßÃ×¯1
+java:S3400Z"9Remove this method and declare a constant for this value.(ÖÏ‘¨8üÏ™Ø¯1

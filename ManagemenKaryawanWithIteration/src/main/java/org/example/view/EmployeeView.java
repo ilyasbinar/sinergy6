@@ -57,13 +57,16 @@ public class EmployeeView {
     public void showEmployee(Employee employee) {
         StringBuilder sb = new StringBuilder();
 
-//        String address = employee.getAddressOptional().orElse("N/A");
 
 //        String address ="";
 //        if(employee.getAddress()!=null) address = employee.getAddress();
 //        else address = "N/A";
 
-        String address = employee.getAddress()!=null?employee.getAddress():"N/A";
+//        String address = employee.getAddress()!=null?employee.getAddress():"N/A";
+
+//        String address = employee.getAddressOptional().orElse("N/A");
+        String address = employee.getAddress();
+        address = address.toUpperCase();
 
 
         sb.append("Nama\t\t:"+employee.getName()).append(Constant.NEW_LINE)

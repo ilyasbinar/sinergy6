@@ -1,5 +1,7 @@
 
-g	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8ıŞİÖ¯1
-G	java:S106"+Replace this use of System.out by a logger.(œŞ¬½8ˆßİÖ¯1
-G	java:S106"+Replace this use of System.out by a logger.(ÓÛËş8‰ßİÖ¯1
-]	java:S125"<This block of commented-out lines of code should be removed.(üˆ¨şşÿÿÿÿ8åäâÖ¯1
+G	java:S106"+Replace this use of System.out by a logger.(œŞ¬½8ø…¹Ø¯1
+G	java:S106"+Replace this use of System.out by a logger.(ÓÛËş8ù…¹Ø¯1
+]	java:S125"<This block of commented-out lines of code should be removed.(üˆ¨şşÿÿÿÿ8ù…¹Ø¯1
+X	java:S125"<This block of commented-out lines of code should be removed.(ƒ¯áõ8ú…¹Ø¯1
+X	java:S125%"<This block of commented-out lines of code should be removed.(‡š¹Û8ú…¹Ø¯1
+]	java:S125*"<This block of commented-out lines of code should be removed.(ò¡úÿÿÿÿ8¢Ë»Ø¯1

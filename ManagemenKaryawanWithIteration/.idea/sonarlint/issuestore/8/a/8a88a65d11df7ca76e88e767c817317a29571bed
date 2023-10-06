@@ -1,10 +1,13 @@
 
-G	java:S106"+Replace this use of System.out by a logger.(âÃéŒ8èá·­1
-L	java:S106"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8íá·­1
-L	java:S106"+Replace this use of System.out by a logger.(ã’•÷ûÿÿÿÿ8îá·­1
-G	java:S106#"+Replace this use of System.out by a logger.(ˆÁç¸8ğá·­1
-G	java:S106'"+Replace this use of System.out by a logger.(ªÿˆÉ8òá·­1
-L	java:S1061"+Replace this use of System.out by a logger.(À¨Ï—ıÿÿÿÿ8úá·­1
-L	java:S1062"+Replace this use of System.out by a logger.(°¿ÏËûÿÿÿÿ8úá·­1
-L	java:S1066"+Replace this use of System.out by a logger.(Ä«‹âıÿÿÿÿ8üá·­1
-L	java:S106?"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8€â·­1
+G	java:S106"+Replace this use of System.out by a logger.(âÃéŒ8Áü¤Ù¯1
+L	java:S106"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8Åü¤Ù¯1
+L	java:S106"+Replace this use of System.out by a logger.(ã’•÷ûÿÿÿÿ8Åü¤Ù¯1
+G	java:S106#"+Replace this use of System.out by a logger.(ˆÁç¸8Æü¤Ù¯1
+G	java:S106'"+Replace this use of System.out by a logger.(ªÿˆÉ8Æü¤Ù¯1
+L	java:S1061"+Replace this use of System.out by a logger.(À¨Ï—ıÿÿÿÿ8Éü¤Ù¯1
+L	java:S1062"+Replace this use of System.out by a logger.(°¿ÏËûÿÿÿÿ8Éü¤Ù¯1
+L	java:S1066"+Replace this use of System.out by a logger.(Ä«‹âıÿÿÿÿ8Êü¤Ù¯1
+X	java:S125="<This block of commented-out lines of code should be removed.(ÆÈ„¯8Ìü¤Ù¯1
+X	java:S125A"<This block of commented-out lines of code should be removed.(ÊìÜç8Ìü¤Ù¯1
+W	java:S125C"<This block of commented-out lines of code should be removed.(ÛûËS8—‚³Ù¯1
+L	java:S106L"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8Ïü¤Ù¯1
