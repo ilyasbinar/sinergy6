@@ -1,18 +1,28 @@
 package org.example.service;
 
 import org.example.controller.EmployeeController;
-import org.example.model.Data;
 import org.example.model.Departement;
 import org.example.model.Employee;
+import org.example.repository.EmployeeRepository;
 import org.example.view.EmployeeView;
 import org.example.view.ErrorView;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
+@Service
 public class EmployeeService {
+
+    @Autowired
+    EmployeeRepository employeeRepository;
+
+    @Autowired
+    DepartementService departementService;
+
+
     public List<Employee> getEmployees(){
-        return Data.employees;
+        return employeeRepository.findAll();
     }
 
     public void selectOption(int optionSelected) {
@@ -29,8 +39,8 @@ public class EmployeeService {
     }
 
     public void tambahEmployee() {
-        EmployeeController employeeController = new EmployeeController();
         EmployeeView employeeView = new EmployeeView();
+        EmployeeController employeeController = new EmployeeController();
 
         System.out.println("Silakan masukkan data pegawai.");
         Employee e = new Employee();
@@ -40,33 +50,31 @@ public class EmployeeService {
         e.setEmpId(employeeController.inputEmpId());
         employeeView.fieldAddress();
         e.setAddress(employeeController.inputAddress());
-        employeeView.fieldDepartement();
+        employeeView.fieldDepartement(departementService.getDepartements());
 
         int departementSelected = employeeController.inputDepartement();
-        Departement departement =  Data.departementMap.get(departementSelected);
+        Departement departement =  departementService.getById(departementSelected);
         e.setDepartement(departement);
-        Data.employees.add(e);
+        employeeRepository.save(e);
     }
 
 
     public void showEmployee() {
         EmployeeView employeeView = new EmployeeView();
         EmployeeController employeeController = new EmployeeController();
-        EmployeeService employeeService = new EmployeeService();
-
         employeeView.inputEmpIdForm();
         String empId = employeeController.inputEmpId();
-        Employee employee = employeeService.getEmployeeByEmpId(empId);
+        Employee employee = employeeRepository.findByEmpId(empId);
 
     }
 
     public Employee getEmployeeByEmpId(String empId) {
 
-        Optional<Employee> employee =  Data.employees.stream().filter(p->p.getEmpId().equals(empId)).findFirst();
-        if(employee.isEmpty()){
+        Employee employee =  employeeRepository.findByEmpId(empId);
+        if(employee == null){
             ErrorView errorView = new ErrorView();
             errorView.wrongEmpId();
         }
-        return employee.get();
+        return employee;
     }
 }

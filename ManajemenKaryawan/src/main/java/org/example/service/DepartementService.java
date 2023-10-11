@@ -1,23 +1,43 @@
 package org.example.service;
 
-import org.example.model.Data;
 import org.example.model.Departement;
+import org.example.repository.DepartementRepository;
+import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
+import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
+@Service
 public class DepartementService {
+    private final DepartementRepository departementRepository;
+
+    public DepartementService(DepartementRepository departementRepository) {
+        this.departementRepository = departementRepository;
+    }
 
     public void initiateData() {
 
-        Data.departementMap.put(1, new Departement().setName("Sales & Marketing"));
-        Data.departementMap.put(2, new Departement().setName("Human Resources"));
-        Data.departementMap.put(3, new Departement().setName("Information & Technology"));
-        Data.departementMap.put(4, new Departement().setName("Purchasing"));
-        Data.departementMap.put(5, new Departement().setName("Accounting"));
-        Data.departementMap.put(6, new Departement().setName("General Affair"));
+        if(departementRepository.count()==0){
+            departementRepository.save(new Departement().setName("Sales & Marketing"));
+            departementRepository.save(new Departement().setName("Human Resources"));
+            departementRepository.save(new Departement().setName("Information & Technology"));
+            departementRepository.save(new Departement().setName("Purchasing"));
+            departementRepository.save(new Departement().setName("Accounting"));
+            departementRepository.save(new Departement().setName("General Affair"));
+        }
     }
 
-    public Map<Integer, Departement> getDepartements() {
-        return Data.departementMap;
+    public List<Departement> getDepartements() {
+        return departementRepository.findAll();
+    }
+
+    public Departement getById(int departementSelected) {
+        Optional<Departement> departementOptional =  departementRepository.findById(departementSelected);
+        if(departementOptional.isPresent()){
+            return departementOptional.get();
+        }
+        throw new RuntimeException();
     }
 }

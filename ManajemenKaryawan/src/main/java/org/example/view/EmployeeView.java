@@ -2,12 +2,10 @@ package org.example.view;
 
 import org.example.model.Departement;
 import org.example.model.Employee;
-import org.example.service.DepartementService;
 import org.example.utils.Constant;
 
 import java.util.List;
-import java.util.Map;
-import java.util.logging.Logger;
+
 
 public class EmployeeView {
     public void tableEmployee(List<Employee> employees){
@@ -40,12 +38,10 @@ public class EmployeeView {
         System.out.print("Alamat: ");
     }
 
-    public void fieldDepartement() {
-        DepartementService ds = new DepartementService();
-        Map<Integer, Departement> departementMap = ds.getDepartements();
+    public void fieldDepartement(List<Departement> departements) {
         StringBuilder sb = new StringBuilder();
-        for(Map.Entry<Integer, Departement> entry:departementMap.entrySet()){
-            sb.append(entry.getKey()).append(". ").append(entry.getValue().getName()).append(Constant.NEW_LINE);
+        for(Departement departement:departements){
+            sb.append(departement.getId()).append(". ").append(departement.getName()).append(Constant.NEW_LINE);
         }
         System.out.print(sb);
         System.out.print("Pilih Departemen: ");

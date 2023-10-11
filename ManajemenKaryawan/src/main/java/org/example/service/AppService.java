@@ -1,9 +1,17 @@
 package org.example.service;
 
 import org.example.controller.EmployeeController;
-import org.example.view.EmployeeView;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AppService {
+    private final EmployeeController employeeController;
+    private final DepartementService departementService;
+
+    public AppService(EmployeeController employeeController, DepartementService departementService) {
+        this.employeeController = employeeController;
+        this.departementService = departementService;
+    }
     private boolean EXIT=false;
 
     public boolean isEXIT() {
@@ -19,13 +27,11 @@ public class AppService {
         CSVDataService csvDataService = new CSVDataService();
         csvDataService.importData();
 
-        DepartementService ds = new DepartementService();
-        ds.initiateData();
+        departementService.initiateData();
 
     }
     public void run(){
         //Home
-        EmployeeController employeeController =  new EmployeeController();
         employeeController.home();
     }
 }

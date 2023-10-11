@@ -1,18 +1,30 @@
 package org.example.controller;
 
 import org.example.model.Employee;
-import org.example.service.AppService;
 import org.example.service.CSVDataService;
+import org.example.service.DepartementService;
 import org.example.service.EmployeeService;
 import org.example.view.EmployeeView;
 import org.example.view.ErrorView;
 import org.example.view.GeneralView;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
+@Component
 public class EmployeeController {
+   @Autowired
+   EmployeeService employeeService;
+
+   @Autowired
+   DepartementService departementService;
+
+    public EmployeeController() {
+    }
+
     public void home(){
         GeneralView.welcomeMessage();
         menu();
@@ -20,7 +32,6 @@ public class EmployeeController {
 
     public void menu() {
         EmployeeView employeeView = new EmployeeView();
-        EmployeeService employeeService = new EmployeeService();
         List<Employee> employees = employeeService.getEmployees();
 
         employeeView.tableEmployee(employees);
@@ -53,14 +64,12 @@ public class EmployeeController {
     }
 
     private void addEmployee() {
-        EmployeeService employeeService = new EmployeeService();
         employeeService.tambahEmployee();
         menu();
     }
 
     public void showEmployee(){
         EmployeeView employeeView = new EmployeeView();
-        EmployeeService employeeService = new EmployeeService();
         employeeView.inputEmpIdForm();
         String empId = inputEmpId();
         Employee employee = employeeService.getEmployeeByEmpId(empId);
