@@ -1,15 +1,0 @@
-
-r
-java:S1104"UMake employees a static final constant or non-public and provide accessors if needed.(„Ö»£8ğº³´­1
-v
-java:S1104"ZMake departementMap a static final constant or non-public and provide accessors if needed.(àÍa8ñº³´­1
-L
-java:S1444"/Make this "public static employees" field final(„Ö»£8ñº³´­1
-P
-java:S1444"4Make this "public static departementMap" field final(àÍa8òº³´­1
-:
-java:S2386"Make this member "protected".(„Ö»£8õº³´­1
-9
-java:S2386"Make this member "protected".(àÍa8öº³´­1
-W
-java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰8«Ø´­­1

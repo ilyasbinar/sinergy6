@@ -18,8 +18,6 @@ e
 -src/main/java/org/example/utils/Constant.java,4/4/44cfeb5f50ff9dbb5eb490e750b511737a22c663
 f
 6src/main/java/org/example/service/EmployeeService.java,9/3/93c40b0c411cd4467f67d6257b6c9406a2ba798e
-Y
-)src/main/java/org/example/model/Data.java,4/e/4e6ed03f4c500ea709a5397e5f3af8f36e0fde48
 a
 1src/main/java/org/example/service/AppService.java,f/0/f021d85257fd5186733b276506bb15645cfb879e
 l
@@ -28,8 +26,6 @@ l
 0src/main/java/org/example/view/EmployeeView.java,8/a/8a88a65d11df7ca76e88e767c817317a29571bed
 _
 /src/main/java/org/example/view/GeneralView.java,4/0/408a2ea381a087e20c2bf322d006466a1e11ea06
-S
-#src/main/java/org/example/Main.java,0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b
 Å
 Q.idea/sonarlint/securityhotspotstore/4/e/4e6ed03f4c500ea709a5397e5f3af8f36e0fde48,b/8/b8e051d929b5c8e9e38763df793d1c9935cb03a2
 Å

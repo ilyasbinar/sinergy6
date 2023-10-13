@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Setter
 @Getter
 @NoArgsConstructor
@@ -22,4 +24,6 @@ public class Employee {
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "departement_id", referencedColumnName = "id")
     private Departement departement;
+
+    private LocalDateTime createdDate;
 }

@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.example.model.Departement;
 import org.example.model.Employee;
 import org.example.service.CSVDataService;
 import org.example.service.DepartementService;
@@ -64,8 +65,28 @@ public class EmployeeController {
     }
 
     private void addEmployee() {
-        employeeService.tambahEmployee();
+        tambahEmployee();
         menu();
+    }
+    public void tambahEmployee() {
+        EmployeeView employeeView = new EmployeeView();
+        EmployeeController employeeController = new EmployeeController();
+
+        System.out.println("Silakan masukkan data pegawai.");
+        Employee e = new Employee();
+        employeeView.fieldName();
+        e.setName(employeeController.inputName());
+        employeeView.fieldEmpId();
+        e.setEmpId(employeeController.inputEmpId());
+        employeeView.fieldAddress();
+        e.setAddress(employeeController.inputAddress());
+        employeeView.fieldDepartement(departementService.getDepartements());
+
+        int departementSelected = employeeController.inputDepartement();
+        Departement departement =  departementService.getById(departementSelected);
+        e.setDepartement(departement);
+
+        employeeService.tambah(e);
     }
 
     public void showEmployee(){

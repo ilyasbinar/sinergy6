@@ -14,8 +14,6 @@ i
 -src/main/java/org/example/view/ErrorView.java,0/0/00e353796159a27ef1ed7be7b3653709bb0175e1
 ]
 -src/main/java/org/example/utils/Constant.java,4/4/44cfeb5f50ff9dbb5eb490e750b511737a22c663
-Y
-)src/main/java/org/example/model/Data.java,4/e/4e6ed03f4c500ea709a5397e5f3af8f36e0fde48
 a
 1src/main/java/org/example/service/AppService.java,f/0/f021d85257fd5186733b276506bb15645cfb879e
 `
@@ -28,8 +26,6 @@ e
 5src/main/java/org/example/service/CSVDataService.java,e/4/e4e3540cb7365f898824ffed2d5fbac9a0e709e2
 _
 /src/main/java/org/example/view/GeneralView.java,4/0/408a2ea381a087e20c2bf322d006466a1e11ea06
-S
-#src/main/java/org/example/Main.java,0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b
 Å
 Q.idea/sonarlint/securityhotspotstore/4/e/4e6ed03f4c500ea709a5397e5f3af8f36e0fde48,b/8/b8e051d929b5c8e9e38763df793d1c9935cb03a2
 Å

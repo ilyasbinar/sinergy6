@@ -9,53 +9,24 @@ import org.example.view.ErrorView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
 public class EmployeeService {
 
     @Autowired
-    EmployeeRepository employeeRepository;
-
-    @Autowired
     DepartementService departementService;
+
+    private final EmployeeRepository employeeRepository;
+
+    public EmployeeService(EmployeeRepository userRepository) {
+        this.employeeRepository = userRepository;
+    }
 
 
     public List<Employee> getEmployees(){
         return employeeRepository.findAll();
-    }
-
-    public void selectOption(int optionSelected) {
-        switch (optionSelected) {
-            case 1 -> tambahEmployee();
-            case 2 -> showEmployee();
-            case 3 -> {
-                //TODO: ubah employee
-            }
-            case 4 -> {
-                //TODO: hapus employee
-            }
-        }
-    }
-
-    public void tambahEmployee() {
-        EmployeeView employeeView = new EmployeeView();
-        EmployeeController employeeController = new EmployeeController();
-
-        System.out.println("Silakan masukkan data pegawai.");
-        Employee e = new Employee();
-        employeeView.fieldName();
-        e.setName(employeeController.inputName());
-        employeeView.fieldEmpId();
-        e.setEmpId(employeeController.inputEmpId());
-        employeeView.fieldAddress();
-        e.setAddress(employeeController.inputAddress());
-        employeeView.fieldDepartement(departementService.getDepartements());
-
-        int departementSelected = employeeController.inputDepartement();
-        Departement departement =  departementService.getById(departementSelected);
-        e.setDepartement(departement);
-        employeeRepository.save(e);
     }
 
 
@@ -76,5 +47,10 @@ public class EmployeeService {
             errorView.wrongEmpId();
         }
         return employee;
+    }
+
+    public Employee tambah(Employee e) {
+        e.setCreatedDate(LocalDateTime.now());
+        return employeeRepository.save(e);
     }
 }
