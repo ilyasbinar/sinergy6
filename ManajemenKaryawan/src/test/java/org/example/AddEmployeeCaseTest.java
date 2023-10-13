@@ -22,6 +22,7 @@ class AddEmployeeCaseTest {
     ilyas.setName("Ilyas");
     ilyas.setAddress("condet");
 
+    //di dalam method tambah ada set created date
     Employee employeeSaved = employeeService.tambah(ilyas);
 
     assertThat(employeeSaved.getCreatedDate()).isNotNull();
