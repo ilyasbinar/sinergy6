@@ -22,8 +22,18 @@ public class Merchant {
     private UUID id;
 
     private String name;
+    private String location;
+    private boolean open;
 
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "merchant")
     private List<Product> productList;
+
+    public void print() {
+        System.out.println("Nama: "+name +". Location: "+location+". Buka: "+openLabel());
+    }
+
+    private String openLabel() {
+        return open? "Ya":"Tidak";
+    }
 }
