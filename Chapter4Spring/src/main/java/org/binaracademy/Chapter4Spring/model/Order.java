@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import java.time.LocalDateTime;
 import java.util.Set;
 import java.util.UUID;
 
@@ -14,17 +15,18 @@ import java.util.UUID;
 @NoArgsConstructor
 @Accessors(chain = true)
 @Entity
-@Table(name = "product")
-public class Product {
+@Table(name = "orders")
+public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
 
-    private String name;
-    private long price; //boleh 0 tapi gak boleh null
+    private LocalDateTime orderTime;
 
-    @ManyToOne(targetEntity = Merchant.class)
-    @JoinColumn(name = "merchant_id")
-    private Merchant merchant;
+    private String destinationAddress;
+
+    private long userId;
+
+    private boolean completed;
 
 }
