@@ -12,7 +12,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @Entity
 @Table(name = "orders_detail")
-public class OrderDetail {
+public class OrderDetail extends AuditModel{
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;

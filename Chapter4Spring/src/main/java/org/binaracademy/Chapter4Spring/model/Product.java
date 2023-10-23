@@ -15,7 +15,7 @@ import java.util.UUID;
 @Accessors(chain = true)
 @Entity
 @Table(name = "product")
-public class Product {
+public class Product extends AuditModel{
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
