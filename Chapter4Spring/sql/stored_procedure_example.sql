@@ -39,3 +39,20 @@ FROM
     information_schema.routines
 WHERE
         routine_type = 'PROCEDURE';
+
+
+create or replace procedure jumlah_merchant_open(out count_merchant int)
+    language plpgsql
+as $ILYAS$
+begin
+    select count(*) into count_merchant from merchant m where "open" is true;
+end;$ILYAS$
+
+do
+$$
+    declare count_merchant int;
+    begin
+        call jumlah_merchant_open(count_merchant);
+        RAISE NOTICE '%', count_merchant;
+    end
+$$

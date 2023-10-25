@@ -41,4 +41,13 @@ public class MerchantService {
     public void editStatusMerchantByName(String name, boolean isOpen){
         merchantRepository.editStatusMerchant(name, isOpen);
     }
+
+    public List<Merchant> getOpenMercant(){
+        return merchantRepository.findAllByOpen(true);
+    }
+
+    public void callProcedure() {
+        int jumlah = merchantRepository.getNumberOfMerchantOpen();
+        int jumlah1 = merchantRepository.countAllByOpen(true);
+    }
 }

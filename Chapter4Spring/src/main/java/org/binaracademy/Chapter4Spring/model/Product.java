@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
+import org.binaracademy.Chapter4Spring.model.dto.ProductViewDto;
 
 import java.util.Set;
 import java.util.UUID;
@@ -27,4 +28,9 @@ public class Product extends AuditModel{
     @JoinColumn(name = "merchant_id")
     private Merchant merchant;
 
+
+    public void fromViewDto(ProductViewDto productViewDto) {
+        this.name=productViewDto.getName();
+        this.price = productViewDto.getPrice();
+    }
 }

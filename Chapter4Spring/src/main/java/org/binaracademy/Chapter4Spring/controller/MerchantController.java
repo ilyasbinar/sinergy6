@@ -81,4 +81,8 @@ public class MerchantController {
         merchantService.create(merchant);
         index();
     }
+
+    public void ujiCobaProcedure() {
+        merchantService.callProcedure();
+    }
 }

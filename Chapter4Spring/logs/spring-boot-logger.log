@@ -1,229 +1,336 @@
-2023-10-20 18:44:30,044 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 8169 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
-2023-10-20 18:44:30,047 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-10-20 18:44:30,746 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-20 18:44:30,814 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
-2023-10-20 18:44:31,248 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-10-20 18:44:31,255 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-10-20 18:44:31,258 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2023-10-20 18:44:31,258 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-20 18:44:31,322 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-10-20 18:44:31,323 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1227 ms
-2023-10-20 18:44:31,448 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-20 18:44:31,504 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-20 18:44:31,507 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2023-10-20 18:44:31,616 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 18:44:31,764 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-20 18:44:31,778 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2023-10-20 18:44:31,858 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f3b84bd
-2023-10-20 18:44:31,860 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-10-20 18:44:32,052 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 18:44:32,728 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-20 18:44:32,790 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 18:44:33,101 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-20 18:44:33,392 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-10-20 18:44:33,407 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-20 18:44:33,417 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 3.89 seconds (process running for 4.659)
-2023-10-20 18:44:36,686 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Error: 0, SQLState: 42601
-2023-10-20 18:44:36,687 ERROR o.h.e.j.s.SqlExceptionHelper [main] ERROR: query has no destination for result data
+2023-10-25 21:48:36,554 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 24308 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
+2023-10-25 21:48:36,558 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-10-25 21:48:37,740 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 21:48:37,839 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 89 ms. Found 2 JPA repository interfaces.
+2023-10-25 21:48:38,650 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-10-25 21:48:38,662 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:48:38,665 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-10-25 21:48:38,666 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-25 21:48:38,770 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-10-25 21:48:38,771 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2132 ms
+2023-10-25 21:48:39,038 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 21:48:39,110 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-25 21:48:39,114 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-10-25 21:48:39,304 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:48:39,512 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25 21:48:39,536 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-10-25 21:48:39,663 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@203b953c
+2023-10-25 21:48:39,665 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-10-25 21:48:40,123 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:48:40,247 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:48:40,248 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:48:41,227 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 21:48:41,372 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:48:42,037 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController': Unsatisfied dependency expressed through field 'productService': Error creating bean with name 'productServiceImpl' defined in file [/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes/org/binaracademy/Chapter4Spring/service/ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'productRepository' defined in org.binaracademy.Chapter4Spring.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Reason: Failed to create query for method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Operator SIMPLE_PROPERTY on merchant requires a scalar argument, found interface java.util.List in method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List)
+2023-10-25 21:48:42,039 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:48:42,041 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-10-25 21:48:42,047 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-10-25 21:48:52,937 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 24481 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
+2023-10-25 21:48:52,943 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-10-25 21:48:54,212 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 21:48:54,328 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+2023-10-25 21:48:55,253 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-10-25 21:48:55,264 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:48:55,267 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-10-25 21:48:55,267 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-25 21:48:55,381 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-10-25 21:48:55,384 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2344 ms
+2023-10-25 21:48:55,633 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 21:48:55,715 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-25 21:48:55,719 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-10-25 21:48:55,982 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:48:56,203 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25 21:48:56,227 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-10-25 21:48:56,363 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a7a1a0d
+2023-10-25 21:48:56,366 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-10-25 21:48:56,812 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:48:56,944 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:48:56,944 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:48:57,934 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 21:48:58,091 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:48:58,757 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController': Unsatisfied dependency expressed through field 'productService': Error creating bean with name 'productServiceImpl' defined in file [/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes/org/binaracademy/Chapter4Spring/service/ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'productRepository' defined in org.binaracademy.Chapter4Spring.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Reason: Failed to create query for method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Operator SIMPLE_PROPERTY on merchant requires a scalar argument, found interface java.util.List in method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List)
+2023-10-25 21:48:58,758 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:48:58,760 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-10-25 21:48:58,767 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-10-25 21:48:58,774 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2023-10-25 21:48:58,793 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25 21:48:58,831 ERROR o.s.b.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController': Unsatisfied dependency expressed through field 'productService': Error creating bean with name 'productServiceImpl' defined in file [/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes/org/binaracademy/Chapter4Spring/service/ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'productRepository' defined in org.binaracademy.Chapter4Spring.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Reason: Failed to create query for method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Operator SIMPLE_PROPERTY on merchant requires a scalar argument, found interface java.util.List in method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:747)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at org.binaracademy.Chapter4Spring.Chapter4SpringApplication.main(Chapter4SpringApplication.java:11)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl' defined in file [/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes/org/binaracademy/Chapter4Spring/service/ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'productRepository' defined in org.binaracademy.Chapter4Spring.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Reason: Failed to create query for method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Operator SIMPLE_PROPERTY on merchant requires a scalar argument, found interface java.util.List in method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in org.binaracademy.Chapter4Spring.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Reason: Failed to create query for method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Operator SIMPLE_PROPERTY on merchant requires a scalar argument, found interface java.util.List in method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:910)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 33 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Reason: Failed to create query for method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Operator SIMPLE_PROPERTY on merchant requires a scalar argument, found interface java.util.List in method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List)
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:115)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:88)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:88)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:357)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:279)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:245)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:285)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 44 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List); Operator SIMPLE_PROPERTY on merchant requires a scalar argument, found interface java.util.List in method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:124)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:258)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:95)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:111)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalStateException: Operator SIMPLE_PROPERTY on merchant requires a scalar argument, found interface java.util.List in method public abstract java.util.List org.binaracademy.Chapter4Spring.repository.ProductRepository.findAllByMerchant(java.util.List)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.throwExceptionOnArgumentMismatch(PartTreeJpaQuery.java:172)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.validate(PartTreeJpaQuery.java:148)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101)
+	... 60 common frames omitted
+2023-10-25 21:51:48,510 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 24756 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
+2023-10-25 21:51:48,522 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-10-25 21:51:49,436 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 21:51:49,515 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2023-10-25 21:51:50,292 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-10-25 21:51:50,304 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:51:50,306 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-10-25 21:51:50,307 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-25 21:51:50,422 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-10-25 21:51:50,423 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1786 ms
+2023-10-25 21:51:50,691 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 21:51:50,765 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-25 21:51:50,768 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-10-25 21:51:51,002 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:51:51,242 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25 21:51:51,268 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-10-25 21:51:51,417 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f95d64d
+2023-10-25 21:51:51,419 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-10-25 21:51:51,925 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:51:52,056 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:51:52,057 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:51:53,041 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 21:51:53,180 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:51:53,820 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 21:51:54,360 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:51:54,384 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-25 21:51:54,397 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 6.906 seconds (process running for 8.191)
+2023-10-25 21:52:01,476 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Error: 0, SQLState: 42601
+2023-10-25 21:52:01,477 ERROR o.h.e.j.s.SqlExceptionHelper [main] ERROR: query has no destination for result data
   Hint: If you want to discard the results of a SELECT, use PERFORM instead.
-  Where: PL/pgSQL function get_open_merchant() line 3 at SQL statement
-2023-10-20 18:46:06,642 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 18:46:06,646 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-10-20 18:46:06,659 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-10-20 18:46:10,764 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 8448 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
-2023-10-20 18:46:10,767 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-10-20 18:46:11,533 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-20 18:46:11,615 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
-2023-10-20 18:46:12,265 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-10-20 18:46:12,273 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-10-20 18:46:12,276 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2023-10-20 18:46:12,276 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-20 18:46:12,355 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-10-20 18:46:12,356 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1544 ms
-2023-10-20 18:46:12,527 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-20 18:46:12,571 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-20 18:46:12,573 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2023-10-20 18:46:12,684 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 18:46:12,817 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-20 18:46:12,831 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2023-10-20 18:46:12,911 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bc20984
-2023-10-20 18:46:12,913 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-10-20 18:46:13,117 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 18:46:13,677 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-20 18:46:13,738 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 18:46:14,035 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-20 18:46:14,312 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-10-20 18:46:14,322 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-20 18:46:14,329 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 4.189 seconds (process running for 4.901)
-2023-10-20 18:46:31,497 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Error: 0, SQLState: 42601
-2023-10-20 18:46:31,498 ERROR o.h.e.j.s.SqlExceptionHelper [main] ERROR: query has no destination for result data
+  Where: PL/pgSQL function jumlah_merchant_open() line 3 at SQL statement
+2023-10-25 21:52:01,513 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Error: 0, SQLState: 42601
+2023-10-25 21:52:01,514 ERROR o.h.e.j.s.SqlExceptionHelper [main] ERROR: query has no destination for result data
   Hint: If you want to discard the results of a SELECT, use PERFORM instead.
-  Where: PL/pgSQL function get_open_merchant() line 3 at SQL statement
-2023-10-20 19:10:02,630 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 19:10:02,633 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-10-20 19:10:02,638 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-10-20 19:10:21,263 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 10660 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
-2023-10-20 19:10:21,267 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-10-20 19:10:22,220 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-20 19:10:22,298 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
-2023-10-20 19:10:22,952 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-10-20 19:10:22,962 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-10-20 19:10:22,965 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2023-10-20 19:10:22,966 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-20 19:10:23,057 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-10-20 19:10:23,058 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1683 ms
-2023-10-20 19:10:23,261 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-20 19:10:23,316 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-20 19:10:23,318 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2023-10-20 19:10:23,450 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 19:10:23,615 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-20 19:10:23,639 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2023-10-20 19:10:23,766 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e3283f6
-2023-10-20 19:10:23,768 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-10-20 19:10:24,128 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 19:10:24,944 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-20 19:10:25,014 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 19:10:25,415 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-20 19:10:25,788 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-10-20 19:10:25,806 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-20 19:10:25,814 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 5.266 seconds (process running for 6.932)
-2023-10-20 21:28:54,436 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:28:54,438 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-10-20 21:28:54,444 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-10-20 21:28:59,710 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 17809 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
-2023-10-20 21:28:59,712 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-10-20 21:29:00,440 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-20 21:29:00,499 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
-2023-10-20 21:29:01,040 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-10-20 21:29:01,047 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:29:01,048 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2023-10-20 21:29:01,048 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-20 21:29:01,122 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-10-20 21:29:01,123 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1361 ms
-2023-10-20 21:29:01,286 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-20 21:29:01,336 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-20 21:29:01,338 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2023-10-20 21:29:01,469 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:29:01,624 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-20 21:29:01,640 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2023-10-20 21:29:01,739 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f51f588
-2023-10-20 21:29:01,740 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-10-20 21:29:01,981 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:29:02,595 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-20 21:29:02,677 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:29:03,125 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-20 21:29:03,647 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:29:03,669 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-20 21:29:03,685 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 4.731 seconds (process running for 5.573)
-2023-10-20 21:32:51,173 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:32:51,175 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-10-20 21:32:51,179 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-10-20 21:34:03,384 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 18149 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
-2023-10-20 21:34:03,387 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-10-20 21:34:04,033 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-20 21:34:04,091 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
-2023-10-20 21:34:04,645 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-10-20 21:34:04,652 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:34:04,655 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2023-10-20 21:34:04,655 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-20 21:34:04,747 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-10-20 21:34:04,748 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1311 ms
-2023-10-20 21:34:04,931 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-20 21:34:04,979 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-20 21:34:04,981 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2023-10-20 21:34:05,111 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:34:05,257 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-20 21:34:05,272 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2023-10-20 21:34:05,365 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@173511ff
-2023-10-20 21:34:05,367 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-10-20 21:34:05,655 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:34:06,372 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-20 21:34:06,456 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:34:06,883 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-20 21:34:07,336 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:34:07,359 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-20 21:34:07,371 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 4.73 seconds (process running for 5.625)
-2023-10-20 21:35:35,695 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:35:35,697 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-10-20 21:35:35,701 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-10-20 21:35:41,518 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 18344 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
-2023-10-20 21:35:41,521 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-10-20 21:35:42,256 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-20 21:35:42,327 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
-2023-10-20 21:35:42,968 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-10-20 21:35:42,979 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:35:42,981 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2023-10-20 21:35:42,981 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-20 21:35:43,077 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-10-20 21:35:43,077 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1496 ms
-2023-10-20 21:35:43,269 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-20 21:35:43,329 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-20 21:35:43,331 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2023-10-20 21:35:43,485 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:35:43,655 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-20 21:35:43,670 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2023-10-20 21:35:43,778 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28554ac8
-2023-10-20 21:35:43,780 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-10-20 21:35:44,045 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:35:44,818 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-20 21:35:44,897 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:35:45,305 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-20 21:35:45,702 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:35:45,719 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-20 21:35:45,730 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 4.979 seconds (process running for 6.039)
-2023-10-20 21:36:04,005 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:36:04,008 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-10-20 21:36:04,015 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-10-20 21:36:22,367 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 18513 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
-2023-10-20 21:36:22,370 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-10-20 21:36:23,082 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-20 21:36:23,154 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
-2023-10-20 21:36:23,732 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-10-20 21:36:23,739 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:36:23,741 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2023-10-20 21:36:23,741 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-20 21:36:23,824 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-10-20 21:36:23,825 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1403 ms
-2023-10-20 21:36:24,006 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-20 21:36:24,065 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-20 21:36:24,068 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2023-10-20 21:36:24,210 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:36:24,390 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-20 21:36:24,412 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2023-10-20 21:36:24,531 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5323999f
-2023-10-20 21:36:24,533 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-10-20 21:36:24,816 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:36:25,537 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-20 21:36:25,618 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:36:25,964 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-20 21:36:26,348 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:36:26,361 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-20 21:36:26,371 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 4.658 seconds (process running for 5.441)
-2023-10-20 21:39:39,964 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:39:39,968 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-10-20 21:39:39,974 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-10-20 21:39:43,434 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 18899 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
-2023-10-20 21:39:43,437 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-10-20 21:39:44,136 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-20 21:39:44,201 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
-2023-10-20 21:39:44,735 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-10-20 21:39:44,743 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:39:44,745 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2023-10-20 21:39:44,745 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-20 21:39:44,825 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-10-20 21:39:44,825 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1333 ms
-2023-10-20 21:39:44,996 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-20 21:39:45,053 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-20 21:39:45,056 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2023-10-20 21:39:45,185 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:39:45,317 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-20 21:39:45,333 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2023-10-20 21:39:45,418 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6bd92538
-2023-10-20 21:39:45,420 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-10-20 21:39:45,667 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
-2023-10-20 21:39:46,294 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-20 21:39:46,358 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-20 21:39:46,691 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-20 21:39:47,048 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-10-20 21:39:47,064 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-20 21:39:47,074 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 4.344 seconds (process running for 5.212)
+  Where: PL/pgSQL function jumlah_merchant_open() line 3 at SQL statement
+2023-10-25 21:52:52,863 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:52:52,866 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-10-25 21:52:52,870 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-10-25 21:52:56,685 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 24961 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
+2023-10-25 21:52:56,689 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-10-25 21:52:57,624 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 21:52:57,700 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2023-10-25 21:52:58,374 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-10-25 21:52:58,382 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:52:58,385 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-10-25 21:52:58,385 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-25 21:52:58,487 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-10-25 21:52:58,488 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1744 ms
+2023-10-25 21:52:58,715 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 21:52:58,780 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-25 21:52:58,783 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-10-25 21:52:58,946 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:52:59,111 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25 21:52:59,126 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-10-25 21:52:59,246 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59d6642a
+2023-10-25 21:52:59,248 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-10-25 21:52:59,618 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:52:59,715 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:52:59,715 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:53:00,508 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 21:53:00,623 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:53:01,147 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 21:53:01,611 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:53:01,633 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-25 21:53:01,647 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 5.822 seconds (process running for 6.938)
+2023-10-25 21:53:12,978 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:53:12,980 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-10-25 21:53:12,988 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-10-25 21:55:01,061 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 25260 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
+2023-10-25 21:55:01,064 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-10-25 21:55:01,850 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 21:55:01,932 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2023-10-25 21:55:02,561 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-10-25 21:55:02,570 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:55:02,573 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-10-25 21:55:02,574 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-25 21:55:02,675 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-10-25 21:55:02,675 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1544 ms
+2023-10-25 21:55:02,905 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 21:55:02,964 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-25 21:55:02,968 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-10-25 21:55:03,141 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:55:03,313 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25 21:55:03,332 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-10-25 21:55:03,456 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69bc9584
+2023-10-25 21:55:03,457 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-10-25 21:55:03,841 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:55:03,950 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:55:03,950 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:55:04,741 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 21:55:04,857 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:55:05,374 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 21:55:05,820 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:55:05,838 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-25 21:55:05,848 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 5.584 seconds (process running for 6.746)
+2023-10-25 21:56:37,120 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s562ms52µs721ns).
+2023-10-25 21:56:37,168 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:56:37,170 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-10-25 21:56:37,174 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-10-25 21:56:40,344 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 25510 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
+2023-10-25 21:56:40,347 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-10-25 21:56:41,169 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 21:56:41,258 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2023-10-25 21:56:41,950 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-10-25 21:56:41,959 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:56:41,960 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-10-25 21:56:41,961 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-25 21:56:42,053 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-10-25 21:56:42,054 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1645 ms
+2023-10-25 21:56:42,266 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 21:56:42,326 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-25 21:56:42,330 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-10-25 21:56:42,509 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:56:42,714 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25 21:56:42,737 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-10-25 21:56:42,876 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@641ed324
+2023-10-25 21:56:42,879 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-10-25 21:56:43,253 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 21:56:43,351 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:56:43,352 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 21:56:44,261 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 21:56:44,385 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 21:56:44,905 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 21:56:45,335 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-25 21:56:45,356 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-25 21:56:45,368 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 5.824 seconds (process running for 6.982)
+2023-10-25 22:07:12,563 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 22:07:12,566 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-10-25 22:07:12,571 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-10-25 22:07:18,680 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 26339 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
+2023-10-25 22:07:18,684 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-10-25 22:07:19,795 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 22:07:19,906 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2023-10-25 22:07:20,682 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-10-25 22:07:20,696 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-25 22:07:20,699 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-10-25 22:07:20,699 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-25 22:07:20,813 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-10-25 22:07:20,814 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2050 ms
+2023-10-25 22:07:21,097 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 22:07:21,168 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-25 22:07:21,171 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-10-25 22:07:21,385 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 22:07:21,599 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25 22:07:21,624 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-10-25 22:07:21,760 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3214bad
+2023-10-25 22:07:21,763 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-10-25 22:07:22,241 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 22:07:22,362 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 22:07:22,362 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 22:07:23,403 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 22:07:23,550 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 22:07:24,197 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 22:07:24,698 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-25 22:07:24,718 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-25 22:07:24,732 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 7.116 seconds (process running for 8.357)
+2023-10-25 22:07:27,872 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Error: 0, SQLState: 42883
+2023-10-25 22:07:27,875 ERROR o.h.e.j.s.SqlExceptionHelper [main] ERROR: procedure jumlah_merchant_open(unknown) does not exist
+  Hint: No procedure matches the given name and argument types. You might need to add explicit type casts.
+  Position: 6
+2023-10-25 22:07:27,924 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Error: 0, SQLState: 42883
+2023-10-25 22:07:27,927 ERROR o.h.e.j.s.SqlExceptionHelper [main] ERROR: procedure jumlah_merchant_open(unknown) does not exist
+  Hint: No procedure matches the given name and argument types. You might need to add explicit type casts.
+  Position: 6
+2023-10-25 22:08:04,287 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 22:08:04,290 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-10-25 22:08:04,296 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-10-25 22:08:09,906 INFO o.s.b.StartupInfoLogger [main] Starting Chapter4SpringApplication using Java 21 with PID 26507 (/home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring/target/classes started by birruby in /home/birruby/Documents/work/binar/sinergy6/git/sinergy6/Chapter4Spring)
+2023-10-25 22:08:09,910 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-10-25 22:08:10,668 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 22:08:10,742 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2023-10-25 22:08:11,385 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-10-25 22:08:11,395 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-25 22:08:11,398 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-10-25 22:08:11,398 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-25 22:08:11,488 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-10-25 22:08:11,488 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1522 ms
+2023-10-25 22:08:11,703 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 22:08:11,761 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-25 22:08:11,763 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-10-25 22:08:11,919 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 22:08:12,092 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25 22:08:12,111 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-10-25 22:08:12,235 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69bc9584
+2023-10-25 22:08:12,237 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-10-25 22:08:12,598 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-10-25 22:08:12,695 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 22:08:12,696 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): org.binaracademy.Chapter4Spring.model.OrderProductKey
+2023-10-25 22:08:13,500 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 22:08:13,622 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 22:08:14,166 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 22:08:14,610 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-25 22:08:14,628 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-25 22:08:14,638 INFO o.s.b.StartupInfoLogger [main] Started Chapter4SpringApplication in 5.484 seconds (process running for 6.532)
+2023-10-25 22:14:50,484 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 22:14:50,486 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-10-25 22:14:50,489 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

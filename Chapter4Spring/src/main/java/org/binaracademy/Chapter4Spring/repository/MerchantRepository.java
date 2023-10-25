@@ -21,8 +21,17 @@ public interface MerchantRepository extends JpaRepository<Merchant, UUID> {
     void closeMerchantByName(@Param("merchant_name") String name);
 
 
+    @Procedure("jumlah_merchant_open")
+    int getNumberOfMerchantOpen();
+
+    int countAllByOpen(boolean open);
+
+
     @Procedure("edit_merchant_status")
     void editStatusMerchant(@Param("merchant_name") String name, @Param("is_open") boolean isOpen);
 
-    List<Merchant> findAllByName(String name);
+    List<Merchant> findAllByLocationAndOpen(String location, boolean open);
+
+
+    List<Merchant> findAllByOpen(boolean open);
 }
