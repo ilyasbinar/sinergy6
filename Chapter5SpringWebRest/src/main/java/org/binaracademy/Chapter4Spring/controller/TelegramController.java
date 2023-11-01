@@ -30,4 +30,14 @@ public class TelegramController {
 
         return theJoke;
     }
+
+    @GetMapping("sendgempa")
+    public String sendInfoGempa(){
+//        https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json
+        String infoGempa="";
+
+        //kirim info gempa ke telegram
+
+        return infoGempa;
+    }
 }
