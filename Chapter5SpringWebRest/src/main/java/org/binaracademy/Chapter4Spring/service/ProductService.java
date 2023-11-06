@@ -16,4 +16,6 @@ public interface ProductService {
     List<Product> getByName(String name, int page, int size);
 
     List<ProductViewDto> getFromOpenMerchantViewDto();
+
+    boolean areAllAvailable(List<Product> productList);
 }

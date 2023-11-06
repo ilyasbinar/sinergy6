@@ -24,6 +24,8 @@ public class Product extends AuditModel{
     private String name;
     private long price; //boleh 0 tapi gak boleh null
 
+    private boolean available;
+
     @ManyToOne(targetEntity = Merchant.class)
     @JoinColumn(name = "merchant_id")
     private Merchant merchant;

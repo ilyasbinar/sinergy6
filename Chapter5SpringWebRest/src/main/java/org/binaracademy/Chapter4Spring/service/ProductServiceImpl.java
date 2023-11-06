@@ -16,6 +16,9 @@ import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService{
+
+    @Autowired
+    MerchantService merchantService;
     private final ProductRepository productRepository;
 
     @Autowired
@@ -66,5 +69,20 @@ public class ProductServiceImpl implements ProductService{
 
 
         return null;//productRepository.findByOpenMerchantProductViewDto();
+    }
+
+    @Override
+    public boolean areAllAvailable(List<Product> productList) {
+        //cek merchant open and product available
+        for(Product p: productList){
+            if(p.getMerchant().isOpen()){
+                return false;
+            }
+            if(!p.isAvailable()){
+                return false;
+            }
+        }
+
+        return true;
     }
 }
