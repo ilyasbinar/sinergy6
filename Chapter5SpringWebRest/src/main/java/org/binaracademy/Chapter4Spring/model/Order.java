@@ -23,6 +23,7 @@ public class Order extends AuditModel{
     private long id;
 
     private LocalDateTime orderTime;
+    //order_time between '2023-11-01' and '2023-11-01'
 
     private String destinationAddress;
 

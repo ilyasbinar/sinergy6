@@ -1,6 +1,8 @@
 package org.binaracademy.Chapter4Spring.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -21,7 +23,9 @@ public class Merchant extends AuditModel{
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
+    @NotEmpty
     private String name;
+    @Size(min = 10, max = 200)
     private String location;
     private boolean open;
 

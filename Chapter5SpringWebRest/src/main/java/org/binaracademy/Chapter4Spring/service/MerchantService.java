@@ -1,5 +1,7 @@
 package org.binaracademy.Chapter4Spring.service;
 
+import org.binaracademy.Chapter4Spring.exception.GlobalException;
+import org.binaracademy.Chapter4Spring.exception.MerchantNotFound;
 import org.binaracademy.Chapter4Spring.model.Merchant;
 import org.binaracademy.Chapter4Spring.model.dto.MerchantEditNameDto;
 import org.binaracademy.Chapter4Spring.repository.MerchantRepository;
@@ -57,7 +59,7 @@ public class MerchantService {
     public Merchant getById(UUID idMerchant) {
          Optional<Merchant> merchantOptional = merchantRepository.findById(idMerchant);
          if(merchantOptional.isEmpty()){
-             throw new RuntimeException();
+             throw new MerchantNotFound();
          }
          return merchantOptional.get();
 
