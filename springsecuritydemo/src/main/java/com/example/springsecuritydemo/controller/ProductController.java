@@ -44,7 +44,6 @@ public class ProductController {
     //1 endpoint authorization: user untuku beli
     @GetMapping("/order/{id}")
     @PreAuthorize("hasRole('BUYER')")
-    @Secured({"ROLE_BUYER"})
     public ResponseEntity<?> activeProduct(@PathVariable long id,
                                                  Authentication authentication, Principal principal){
         Product product = productService.getById(id);
@@ -52,8 +51,7 @@ public class ProductController {
     }
 
     @GetMapping("/invoice/{id}")
-//    @PreAuthorize(value = "hasRole('BUYER') or hasRole('SELLER')")
-//    @Secured({"BUYER", "SELLER"})
+    @Secured({"BUYER", "SELLER"})
     public ResponseEntity<?> invoice(@PathVariable long id, Principal principal){
         User user = userRepository.findByUsername(principal.getName()).get();
 
