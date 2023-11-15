@@ -2,10 +2,13 @@ package com.example.springsecuritydemo.controller;
 
 import com.example.springsecuritydemo.dto.response.ResponseHandler;
 import com.example.springsecuritydemo.model.Product;
+import com.example.springsecuritydemo.model.User;
+import com.example.springsecuritydemo.repository.UserRepository;
 import com.example.springsecuritydemo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -26,6 +29,9 @@ public class ProductController {
     @Autowired
     PasswordEncoder passwordEncoder;
 
+    @Autowired
+    UserRepository userRepository;
+
     //1 endpoint public: daftar product yang sedang dijual.
     @GetMapping("/active")
     public ResponseEntity<?> activeProduct(){
@@ -38,12 +44,26 @@ public class ProductController {
     //1 endpoint authorization: user untuku beli
     @GetMapping("/order/{id}")
     @PreAuthorize("hasRole('BUYER')")
+    @Secured({"ROLE_BUYER"})
     public ResponseEntity<?> activeProduct(@PathVariable long id,
                                                  Authentication authentication, Principal principal){
         Product product = productService.getById(id);
         return ResponseHandler.generateResponse("success", product, null, HttpStatus.OK);
     }
 
+    @GetMapping("/invoice/{id}")
+//    @PreAuthorize(value = "hasRole('BUYER') or hasRole('SELLER')")
+//    @Secured({"BUYER", "SELLER"})
+    public ResponseEntity<?> invoice(@PathVariable long id, Principal principal){
+        User user = userRepository.findByUsername(principal.getName()).get();
 
+        //cek apakah user boleh lihat invoice
+//        if(order.getUserId != user.getId()){
+//            throw new RuntimeException();
+//        }
+
+        Product product = productService.getById(id);
+        return ResponseHandler.generateResponse("success", product, null, HttpStatus.OK);
+    }
 
 }
