@@ -11,7 +11,7 @@ public class LoginRequest {
 }
 /**
  * {
- *     username: "ilyas"
- *     passwword: "123456
+ *     "username": "ilyas",
+ *     "passwword": "123456
  * }
  */
