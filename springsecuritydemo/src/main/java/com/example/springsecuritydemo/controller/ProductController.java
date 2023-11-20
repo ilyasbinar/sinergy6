@@ -40,6 +40,14 @@ public class ProductController {
         return ResponseHandler.generateResponse("success", activeProductList, null, HttpStatus.OK);
     }
 
+    @GetMapping("/add")
+    @PreAuthorize("hasRole('MERCHANT')")
+    public ResponseEntity<?> addProduct(){
+        System.out.println(passwordEncoder.encode("abc123456"));
+        List<Product> activeProductList = productService.getActive();
+        return ResponseHandler.generateResponse("success", activeProductList, null, HttpStatus.OK);
+    }
+
 
     //1 endpoint authorization: user untuku beli
     @GetMapping("/order/{id}")
