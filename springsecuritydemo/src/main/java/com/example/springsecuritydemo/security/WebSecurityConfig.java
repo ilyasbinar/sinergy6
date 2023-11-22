@@ -16,6 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.savedrequest.HttpSessionRequestCache;
 
 @Configuration
 @EnableMethodSecurity
@@ -29,14 +30,20 @@ public class WebSecurityConfig{
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        HttpSessionRequestCache myRequestCache = new HttpSessionRequestCache();
+        myRequestCache.setMatchingRequestParameterName(null);
+        myRequestCache.setCreateSessionAllowed(false);
+
         http
+                .requestCache((cache)-> cache.requestCache(myRequestCache))
                 .csrf(csrf -> csrf.disable())
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests( auth ->
                         auth
-                            .requestMatchers("api/auth/**").permitAll()
-                            .requestMatchers("api/product/active").permitAll()
+                            .requestMatchers("/hello").permitAll()
+                            .requestMatchers("/api/auth/**").permitAll()
+                            .requestMatchers("/api/product/active").permitAll()
 //                            .requestMatchers("api/product/order/**").hasRole("ROLE_BUYER")
                             .anyRequest().authenticated()
                         );

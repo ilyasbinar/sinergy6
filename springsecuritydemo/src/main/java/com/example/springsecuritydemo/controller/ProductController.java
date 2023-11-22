@@ -23,14 +23,17 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/product")
 public class ProductController {
-    @Autowired
     ProductService productService;
 
-    @Autowired
     PasswordEncoder passwordEncoder;
 
-    @Autowired
     UserRepository userRepository;
+
+    public ProductController(ProductService productService, PasswordEncoder passwordEncoder, UserRepository userRepository) {
+        this.productService = productService;
+        this.passwordEncoder = passwordEncoder;
+        this.userRepository = userRepository;
+    }
 
     //1 endpoint public: daftar product yang sedang dijual.
     @GetMapping("/active")
