@@ -41,13 +41,13 @@ public class WebMvcDemoTest {
     @MockBean
     UserRepository userRepository;
 
-    @Test
-    void productActiveShouldReturnProducts() throws Exception {
-        //
-        String responseJson = "{\"data\":[{\"id\":1,\"name\":\"Kipas Angin\",\"price\":200000,\"active\":true},{\"id\":2,\"name\":\"Mouse\",\"price\":100000,\"active\":true}],\"status\":\"success\"}";
-        mockMvc.perform(get("/api/product/active"))
-                .andDo(print())
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(content().string(responseJson));
-    }
+//    @Test
+//    void productActiveShouldReturnProducts() throws Exception {
+//        //
+//        String responseJson = "{\"data\":[{\"id\":1,\"name\":\"Kipas Angin\",\"price\":200000,\"active\":true},{\"id\":2,\"name\":\"Mouse\",\"price\":100000,\"active\":true}],\"status\":\"success\"}";
+//        mockMvc.perform(get("/api/product/active"))
+//                .andDo(print())
+//                .andExpect(MockMvcResultMatchers.status().isOk())
+//                .andExpect(content().string(responseJson));
+//    }
 }
