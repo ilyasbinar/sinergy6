@@ -1,0 +1,38 @@
+server:
+  port: 8091
+
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          studentClient:
+            url: http://localhost:8222/api/v1/students
+  application:
+    name: schools
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/schools
+    username: postgres
+    password: gajah
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include=*:
