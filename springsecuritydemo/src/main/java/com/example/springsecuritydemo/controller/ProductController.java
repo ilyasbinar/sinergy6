@@ -74,5 +74,4 @@ public class ProductController {
         Product product = productService.getById(id);
         return ResponseHandler.generateResponse("success", product, null, HttpStatus.OK);
     }
-
 }

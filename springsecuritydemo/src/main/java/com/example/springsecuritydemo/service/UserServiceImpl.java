@@ -1,0 +1,33 @@
+package com.example.springsecuritydemo.service;
+
+import com.example.springsecuritydemo.model.User;
+import com.example.springsecuritydemo.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+
+@Service
+public class UserServiceImpl implements UserService{
+    @Autowired
+    UserRepository userRepository;
+    @Override
+    public void createUserPostLogin(String name, String email) {
+        User user = getByUsername(email);
+        if(user == null){
+            user = new User()
+                    .setName(name)
+                    .setEmail(email)
+                    .setUsername(email);
+            userRepository.save(user);
+        }
+    }
+
+    public User getByUsername(String username) {
+        Optional<User> userOptional = userRepository.findByUsername(username);
+        if(userOptional.isEmpty()){
+            return null;
+        }
+        return userOptional.get();
+    }
+}
