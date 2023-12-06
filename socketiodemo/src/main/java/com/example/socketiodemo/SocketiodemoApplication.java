@@ -1,13 +1,13 @@
-package com.example.socketiodemopr;
+package com.example.socketiodemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SocketiodemoprApplication {
+public class SocketiodemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SocketiodemoprApplication.class, args);
+		SpringApplication.run(SocketiodemoApplication.class, args);
 	}
 
 }
