@@ -17,7 +17,11 @@ spring:
         - id: students
           uri: http://localhost:8090
           predicates:
-            - Path=/api/v1/students/**
+            - Path=/api/v1/students/**2
+        - id: auths
+          uri: http://localhost:8080
+          predicates:
+            - Path=/api/v1/auths/**
         - id: schools
           uri: http://localhost:8091
           predicates:
