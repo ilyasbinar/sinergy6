@@ -1,0 +1,50 @@
+#pull postgres image terbaru
+docker pull postgres
+
+#atau dengan versi spesifik
+docker pull postgres:15.5
+
+#run postgres docker
+docker run -d -p 5433:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=gajah123 -e POSTGRES_DB=docker_spring -v /home/birruby/Documents/development/postgresql_con_data:/var/lib/postgresql/data --name=postgres_con  postgres
+# -d (dettach) kontainer akan run di background
+# -p port forwarding. Didalam container postgres, postgres akan running di port 5432.
+    # Lalu jika aplikasi lain(diluar container postgres) ingin akses maka kita perlu akses port si container.
+    # Dalam kasus ini kita akan forward ke port yang sama yaitu 5432
+# -e environtment. Lihat dokumentasi postgres docker
+# -v volume. Untuk mendefinisikan folder data yang ada di kontainer kedalam host
+# --name nama container
+
+#Cek apakah container postgres running. comman cek container yang sedang running
+docker ps
+
+#cek semua container
+docker ps -a
+
+
+#ubah url database di aplikasi. sesuaikan hostname dan portnya. lihat IPAddress dengan command inspect
+docker inspect postgres_con
+
+#Buat Dockerfile di root aplikasi
+FROM eclipse-temurin:17-jdk-focal
+COPY target/*.jar application.jar
+EXPOSE 8081
+ENTRYPOINT ["java", "-jar", "application.jar"]
+
+
+#build app
+mvn clean package
+
+#build docker image
+cd /[PATHAPP]
+docker build -t docker_spring_img .
+#. (dot) artinya Dockerfile ada di directory yang existing
+
+
+#run app docker
+docker run -d -p 8081:8080 --name=docker_spring_con docker_spring_img
+
+#Cek apakah container app running. comman cek container yang sedang running
+docker ps
+
+#docker log
+docker logs docker_spring_con
